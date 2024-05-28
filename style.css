@@ -1,0 +1,148 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  color: #05476e;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #05476e;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #05476e;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc; /* Add border style */
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #05476e;
+  color: #fff;
+  border: 1px solid #05476e; /* Add border style */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add transform transition */
+}
+
+/* Adjust hover effect to change border color and apply scale animation */
+button:hover {
+  background-color: rgba(4, 62, 84, 0.5);
+  border-color: rgba(4, 62, 84, 0.5);
+  transform: scale(1.05); /* Apply scale animation */
+}
+
+
+
+#generatedSignature {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.guide {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.guide ol {
+  margin-left: 20px;
+}
+
+.guide li {
+  margin-bottom: 10px;
+}
+
+#downloadButton {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #05476e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 500px) {
+  .container {
+      max-width: 100%;
+      padding: 10px;
+  }
+}
+
+.form-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+button:hover {
+  background-color: rgba(4, 62, 84, 0.5);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+button:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #043e54;
+}

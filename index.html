@@ -96,81 +96,89 @@
       // Generate the email signature HTML
       var signatureHTML = `
         <table width="400" style="width:400px;font-size:9pt;font-family:Arial,sans-serif;line-height:normal;background-color: white;" cellspacing="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td style="padding-bottom: 6px;">
-                <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                  <tbody>
-                    <tr>
-                      <td width="100" style="vertical-align:middle;text-align: center;border-right: 1px solid #d8d8d8;padding-right: 18px;font-size: 0;" valign="middle">
-                        <a target="_blank" style="outline: 0;text-decoration: none;">
-                          <img alt="a" style="display: inline-block;" src="https://i.postimg.cc/FsTFVQc5/Budget-Logo.png" width="100" height="" border="0" class="CToWUd">
-                        </a>
-                      </td>
-                      <td style="vertical-align:middle;padding-left: 18px;" valign="middle">
-                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                          <tbody>
-                            <tr>
-                              <td style="font-size:20px;line-height: 17px; font-family:Calibri,Arial,sans-serif;font-weight:600;color:#222222;padding-bottom: 14px;text-transform: uppercase;">
-                                ${name}<br>
-                                <span style="font-weight: 400;font-size: 16px;text-transform: none;">${title}</span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="font-size:11px;line-height: 10px; font-family:Calibri,Arial,sans-serif;font-weight:600;color:#05476e;padding-bottom: 8px;text-transform: uppercase;">
-                                ${branch}
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="font-family:Calibri,Arial,sans-serif;color:#575756;padding-bottom:1px;font-size: 13px;line-height: 13px;">
-                                <span>
-                                  <span style="font-weight:bold;font-size: 0;">
-                                    <img src="img/telephone logo.png" width="10" height="10">
-                                  </span>&nbsp;&nbsp;
-                                  <a href="tel:${telephone}" style="text-decoration: none;outline: 0;color:#222222;" target="_blank">
-                                    <span style="font-family:Calibri,Arial,sans-serif;color:#222222;font-size: 13px;">
-                                      ${telephone}
-                                    </span>
-                                  </a>
-                                </span><br>
-                                <span>
-                                  <span style="font-weight:bold;font-size: 0;">
-                                    <img src="https://i.postimg.cc/CMDf7dLy/Email-Logo.png" width="10" height="10">
-                                  </span>&nbsp;&nbsp;
-                                  <a href="mailto:${email}" style="text-decoration: none;outline: 0;color:#222222;" target="_blank">
-                                    <span style="font-family:Calibri,Arial,sans-serif;color:#222222;font-size: 13px;">
-                                      ${email}
-                                    </span>
-                                  </a>
-                                </span><br>
-                                <span>
-                                  <span style="font-weight:bold;font-size: 0;">
-                                    <img src="img/address logo.png" width="10" height="10">
-                                  </span>&nbsp;&nbsp;
-                                  <a href="https://bloans.co.za/" style="text-decoration: none;outline: 0;color:#222222;" target="_blank">
-                                    <span style="font-family:Calibri,Arial,sans-serif;color:#222222;font-size: 13px;">
-                                      ${address}
-                                    </span>
-                                  </a>
-                                </span>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
-            <tr>
-              <td style="font-size: 0;line-height: 0;">
-                <img src="img/Easfin Banner.png" width="400" height="">
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      `;
+    <tbody>
+      <tr>
+        <td style="padding-bottom: 6px;">
+          <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+              <tr>
+                <td width="100" style="vertical-align:middle;text-align: center;border-right: 1px solid #d8d8d8;padding-right: 18px;font-size: 0;" valign="middle">
+                  <a target="_blank" style="outline: 0;text-decoration: none;">
+                    <img alt="a" style="display: inline-block;" src="https://i.postimg.cc/FsTFVQc5/Budget-Logo.png" width="100" height="" border="0" class="CToWUd">
+                  </a>
+                </td>
+                <td style="vertical-align:middle;padding-left: 18px;" valign="middle">
+                  <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                    <tbody>
+                      <tr>
+                        <td style="font-size:20px;line-height: 17px; font-family:Calibri,Arial,sans-serif;font-weight:600;color:#222222;padding-bottom: 14px;text-transform: uppercase;">
+                          ${name}<br>
+                          <span style="font-weight: 400;font-size: 16px;text-transform: none;">${title}</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-size:11px;line-height: 10px; font-family:Calibri,Arial,sans-serif;font-weight:600;color:#05476e;padding-bottom: 8px;text-transform: uppercase;">
+                          ${branch}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="font-family:Calibri,Arial,sans-serif;color:#575756;padding-bottom:1px;font-size: 13px;line-height: 13px;">
+                          <span>
+                            <span style="font-weight:bold;font-size: 0;">
+                              <img src="img/telephone logo.png" width="10" height="10">
+                            </span>&nbsp;&nbsp;
+                            <a href="tel:${telephone}" style="text-decoration: none;outline: 0;color:#222222;" target="_blank">
+                              <span style="font-family:Calibri,Arial,sans-serif;color:#222222;font-size: 13px;">
+                                ${telephone}
+                              </span>
+                            </a>
+                          </span><br>
+                          <span>
+                            <span style="font-weight:bold;font-size: 0;">
+                              <img src="https://i.postimg.cc/CMDf7dLy/Email-Logo.png" width="10" height="10">
+                            </span>&nbsp;&nbsp;
+                            <a href="mailto:${email}" style="text-decoration: none;outline: 0;color:#222222;" target="_blank">
+                              <span style="font-family:Calibri,Arial,sans-serif;color:#222222;font-size: 13px;">
+                                ${email}
+                              </span>
+                            </a>
+                          </span><br>
+                          <span>
+                            <span style="font-weight:bold;font-size: 0;">
+                              <img src="img/address logo.png" width="10" height="10">
+                            </span>&nbsp;&nbsp;
+                            <a href="https://bloans.co.za/" style="text-decoration: none;outline: 0;color:#222222;" target="_blank">
+                              <span style="font-family:Calibri,Arial,sans-serif;color:#222222;font-size: 13px;">
+                                ${address}
+                              </span>
+                            </a>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td style="font-size: 0;line-height: 0;">
+          <img src="img/Easfin Banner.png" width="400" height="">
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-top: 20px;">
+          <p style="font-size: 6px; font-family: Arial, sans-serif; color: #555555; line-height: 1.2;">
+            <strong>Disclaimer</strong><br>
+            This email and any accompanying attachments may contain confidential and proprietary information. This information is private and protected by law and, accordingly, if you are not the intended recipient, you are requested to delete this entire communication immediately and are notified that any disclosure, copying or distribution of or taking any action based on this information is prohibited. Any materials presented in or attached to this email are for information purposes only. The information contained herein is provided solely on the basis that the addressee will be responsible for making its own assessments of the matters discussed. Whilst every effort has been made to ensure that the information is accurate, neither Easyfin Group nor its members, shareholders, employees or agents accept any liability for any loss or damage which may be incurred by any person acting in reliance upon the information contained herein. Emails cannot be guaranteed to be secure or free of errors, malicious code, or viruses. The sender does not accept any liability or responsibility for any interception, corruption, destruction, loss, late arrival or incompleteness of or tampering or interference with any of the information contained in this email or for its incorrect delivery or non-delivery for whatsoever reason or for its effect on any electronic device of the recipient.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+`;
 
       // Display the generated signature
       document.getElementById("generatedSignature").innerHTML = signatureHTML;

@@ -94,8 +94,8 @@
       });
 
       // Generate the email signature HTML
-      var signatureHTML = `
-        <table width="400" style="width:400px;font-size:9pt;font-family:Arial,sans-serif;line-height:normal;background-color: white;" cellspacing="0" cellpadding="0">
+var signatureHTML = `
+  <table width="400" style="width:400px;font-size:9pt;font-family:Arial,sans-serif;line-height:normal;background-color: white;" cellspacing="0" cellpadding="0">
     <tbody>
       <tr>
         <td style="padding-bottom: 6px;">
@@ -179,6 +179,7 @@
     </tbody>
   </table>
 `;
+
 
       // Display the generated signature
       document.getElementById("generatedSignature").innerHTML = signatureHTML;
